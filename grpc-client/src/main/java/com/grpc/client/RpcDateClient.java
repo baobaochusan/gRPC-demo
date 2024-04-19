@@ -49,6 +49,8 @@ public class RpcDateClient  implements Runnable {
                 .build();
         try {
             // 创建一个同步阻塞式的客户端存根，用于与服务器交互
+//            RPCDateServiceGrpc.RPCDateServiceBlockingStub clientStub = RPCDateServiceGrpc.newBlockingStub(channel);
+            // 创建一个异步非阻塞式的客户端存根，用于与服务器交互
             RPCDateServiceGrpc.RPCDateServiceFutureStub clientStub = RPCDateServiceGrpc.newFutureStub(channel);
             // 向服务器发送请求，获取当前日期，请求中包含用户名 "luxs"
             ListenableFuture<RPCDateResponse> future = clientStub.getDate(RPCDateRequest.newBuilder().setUserName("luxs : " + counter.getAndIncrement()).build());

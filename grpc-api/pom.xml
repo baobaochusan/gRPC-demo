@@ -44,30 +44,30 @@
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.xolstice.maven.plugins</groupId>-->
-<!--                <artifactId>protobuf-maven-plugin</artifactId>-->
-<!--                <version>0.6.1</version>-->
-<!--                <configuration>-->
-<!--                    <pluginId>protoc-java</pluginId>-->
-<!--                    &lt;!&ndash; proto文件放置的目录 &ndash;&gt;-->
-<!--                    <protoSourceRoot>${project.basedir}/src/main/protocol</protoSourceRoot>-->
-<!--                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}</pluginArtifact>-->
-<!--                    &lt;!&ndash; 生成文件的目录 &ndash;&gt;-->
-<!--                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>-->
-<!--                    &lt;!&ndash; 生成文件前是否把目标目录清空，这个最好设置为false，以免误删项目文件 &ndash;&gt;-->
-<!--                    <clearOutputDirectory>false</clearOutputDirectory>-->
-<!--                </configuration>-->
+            <plugin>
+                <groupId>org.xolstice.maven.plugins</groupId>
+                <artifactId>protobuf-maven-plugin</artifactId>
+                <version>0.6.1</version>
+                <configuration>
+                    <pluginId>protoc-java</pluginId>
+                    <!-- proto文件放置的目录 -->
+                    <protoSourceRoot>${project.basedir}/src/main/protocol</protoSourceRoot>
+                    <pluginArtifact>io.grpc:protoc-gen-grpc-java:${grpc.version}:exe:${os.detected.classifier}</pluginArtifact>
+                    <!-- 生成文件的目录 -->
+                    <outputDirectory>${project.basedir}/src/main/java</outputDirectory>
+                    <!-- 生成文件前是否把目标目录清空，这个最好设置为false，以免误删项目文件 -->
+                    <clearOutputDirectory>false</clearOutputDirectory>
+                </configuration>
 
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <goals>-->
-<!--                            <goal>compile</goal>-->
-<!--                            <goal>compile-custom</goal>-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>compile-custom</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
