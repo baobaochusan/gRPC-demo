@@ -47,6 +47,7 @@ public class OrderQueryServiceImpl extends OrderQueryServiceGrpc.OrderQueryServi
     @Override
     public void listOrders(Buyer request, StreamObserver<Order> responseObserver) {
         //服务端流式
+        System.out.println("listOrders request: " + request);
         mockOrder().forEach(order -> responseObserver.onNext(order));
         responseObserver.onCompleted();
     }
