@@ -22,10 +22,10 @@
     </properties>
 
     <dependencies>
-<!--        <dependency>-->
-<!--            <groupId>com.demo</groupId>-->
-<!--            <artifactId>grpc-api</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.demo</groupId>
+            <artifactId>grpc-api</artifactId>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
