@@ -4,21 +4,18 @@
 package com.grpc.api.proto;
 
 public interface RPCDateResponseOrBuilder extends
-        // @@protoc_insertion_point(interface_extends:com.grpc.api.proto.RPCDateResponse)
-        com.google.protobuf.MessageOrBuilder {
+    // @@protoc_insertion_point(interface_extends:com.grpc.api.proto.RPCDateResponse)
+    com.google.protobuf.MessageOrBuilder {
 
-    /**
-     * <code>string serverDate = 1;</code>
-     *
-     * @return The serverDate.
-     */
-    java.lang.String getServerDate();
-
-    /**
-     * <code>string serverDate = 1;</code>
-     *
-     * @return The bytes for serverDate.
-     */
-    com.google.protobuf.ByteString
-    getServerDateBytes();
+  /**
+   * <code>string serverDate = 1;</code>
+   * @return The serverDate.
+   */
+  java.lang.String getServerDate();
+  /**
+   * <code>string serverDate = 1;</code>
+   * @return The bytes for serverDate.
+   */
+  com.google.protobuf.ByteString
+      getServerDateBytes();
 }

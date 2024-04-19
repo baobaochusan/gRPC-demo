@@ -4,65 +4,60 @@
 package com.grpc.api.proto;
 
 public final class RPCDateServiceApi {
-    private RPCDateServiceApi() {
-    }
+  private RPCDateServiceApi() {}
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistryLite registry) {
+  }
 
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistryLite registry) {
-    }
-
-    public static void registerAllExtensions(
-            com.google.protobuf.ExtensionRegistry registry) {
-        registerAllExtensions(
-                (com.google.protobuf.ExtensionRegistryLite) registry);
-    }
-
-    static final com.google.protobuf.Descriptors.Descriptor
-            internal_static_com_grpc_api_proto_RPCDateRequest_descriptor;
-    static final
+  public static void registerAllExtensions(
+      com.google.protobuf.ExtensionRegistry registry) {
+    registerAllExtensions(
+        (com.google.protobuf.ExtensionRegistryLite) registry);
+  }
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_grpc_api_proto_RPCDateRequest_descriptor;
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internal_static_com_grpc_api_proto_RPCDateRequest_fieldAccessorTable;
-    static final com.google.protobuf.Descriptors.Descriptor
-            internal_static_com_grpc_api_proto_RPCDateResponse_descriptor;
-    static final
+      internal_static_com_grpc_api_proto_RPCDateRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_grpc_api_proto_RPCDateResponse_descriptor;
+  static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-            internal_static_com_grpc_api_proto_RPCDateResponse_fieldAccessorTable;
+      internal_static_com_grpc_api_proto_RPCDateResponse_fieldAccessorTable;
 
-    public static com.google.protobuf.Descriptors.FileDescriptor
-    getDescriptor() {
-        return descriptor;
-    }
+  public static com.google.protobuf.Descriptors.FileDescriptor
+      getDescriptor() {
+    return descriptor;
+  }
+  private static  com.google.protobuf.Descriptors.FileDescriptor
+      descriptor;
+  static {
+    java.lang.String[] descriptorData = {
+      "\n\020helloworld.proto\022\022com.grpc.api.proto\"\"" +
+      "\n\016RPCDateRequest\022\020\n\010userName\030\001 \001(\t\"%\n\017RP" +
+      "CDateResponse\022\022\n\nserverDate\030\001 \001(\t2f\n\016RPC" +
+      "DateService\022T\n\007getDate\022\".com.grpc.api.pr" +
+      "oto.RPCDateRequest\032#.com.grpc.api.proto." +
+      "RPCDateResponse\"\000B)\n\022com.grpc.api.protoB" +
+      "\021RPCDateServiceApiP\001b\006proto3"
+    };
+    descriptor = com.google.protobuf.Descriptors.FileDescriptor
+      .internalBuildGeneratedFileFrom(descriptorData,
+        new com.google.protobuf.Descriptors.FileDescriptor[] {
+        });
+    internal_static_com_grpc_api_proto_RPCDateRequest_descriptor =
+      getDescriptor().getMessageTypes().get(0);
+    internal_static_com_grpc_api_proto_RPCDateRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_grpc_api_proto_RPCDateRequest_descriptor,
+        new java.lang.String[] { "UserName", });
+    internal_static_com_grpc_api_proto_RPCDateResponse_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_com_grpc_api_proto_RPCDateResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_grpc_api_proto_RPCDateResponse_descriptor,
+        new java.lang.String[] { "ServerDate", });
+  }
 
-    private static com.google.protobuf.Descriptors.FileDescriptor
-            descriptor;
-
-    static {
-        java.lang.String[] descriptorData = {
-                "\n\020helloworld.proto\022\022com.grpc.api.proto\"\"" +
-                        "\n\016RPCDateRequest\022\020\n\010userName\030\001 \001(\t\"%\n\017RP" +
-                        "CDateResponse\022\022\n\nserverDate\030\001 \001(\t2f\n\016RPC" +
-                        "DateService\022T\n\007getDate\022\".com.grpc.api.pr" +
-                        "oto.RPCDateRequest\032#.com.grpc.api.proto." +
-                        "RPCDateResponse\"\000B)\n\022com.grpc.api.protoB" +
-                        "\021RPCDateServiceApiP\001b\006proto3"
-        };
-        descriptor = com.google.protobuf.Descriptors.FileDescriptor
-                .internalBuildGeneratedFileFrom(descriptorData,
-                        new com.google.protobuf.Descriptors.FileDescriptor[]{
-                        });
-        internal_static_com_grpc_api_proto_RPCDateRequest_descriptor =
-                getDescriptor().getMessageTypes().get(0);
-        internal_static_com_grpc_api_proto_RPCDateRequest_fieldAccessorTable = new
-                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-                internal_static_com_grpc_api_proto_RPCDateRequest_descriptor,
-                new java.lang.String[]{"UserName",});
-        internal_static_com_grpc_api_proto_RPCDateResponse_descriptor =
-                getDescriptor().getMessageTypes().get(1);
-        internal_static_com_grpc_api_proto_RPCDateResponse_fieldAccessorTable = new
-                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-                internal_static_com_grpc_api_proto_RPCDateResponse_descriptor,
-                new java.lang.String[]{"ServerDate",});
-    }
-
-    // @@protoc_insertion_point(outer_class_scope)
+  // @@protoc_insertion_point(outer_class_scope)
 }
